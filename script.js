@@ -294,14 +294,14 @@ console.log(arr)
 // var hello = "Hello World";
 // console.log(hello);
 
-function addall(...numbers){
-    let total = 0;
-    for(let number of numbers){
-        total = total + number;
-    }
-    return total
-}
+// function addall(...numbers){
+//     let total = 0;
+//     for(let number of numbers){
+//         total = total + number;
+//     }
+//     return total
+// }
 
-const ans = addall(4,5,4,2,10);
+// const ans = addall(4,5,4,2,10);
 
-console.log(ans)
+// console.log(ans)
