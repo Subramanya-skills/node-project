@@ -95,17 +95,213 @@
 
 
 // OBJECTS.............
+// const key = "email";
+// const data = {
+//     name: "Subramanya",
+//     age: 22,
+//     Department: "GenAi"
+// }
+// data[key] = "subramanyashanbhog@rs.com"
+// // console.log(data);
 
-const data = {
-    name: "Subramanya",
-    age: 22,
-    Department: "GenAi"
+// for(let key in data){
+//     console.log(data[key]);
+// }
+// console.log(data);
+
+// delete data.age;
+// console.log(data);
+// data.age = 25;
+// console.log(data);
+// Object.assign(data,{country: "USA"});
+// console.log(data);
+
+
+// SPREAD OPERATORS.............
+
+// const arr = [1,2,3];
+// const narr = [...arr];
+// console.log(narr)
+
+
+// const obj1 =  {
+//     key1: "value1",
+//     key2: "value2"
+// };
+let c = [1]
+
+console.log({}==Object)
+
+
+// const obj2 = {
+//     key1: "uniq",
+//     key3: "value3",
+//     key4: "value4"
+// };
+// const nobj = {...obj1,...obj2}
+// console.log(nobj);
+
+// object Destructuring.........
+
+const band = {
+    name: "Chitramanjari",
+    famoussong: "Kannadigaru"
+};
+// const bandName = band.name;
+// const bandFamoussong = band.famoussong;
+// console.log(bandName,bandFamoussong);
+
+let a = 10
+a = 20;
+
+const b = 10
+const arr=[1,2,3]
+arr.push(4)
+console.log(arr)
+
+// console.log(b)
+// const band = {
+//     bname:"led Zepplen",
+//     song:"terajanam",
+//     year: 1980,
+//     fsong:"kashmir"
+// };
+// let {bname,song, ...restProps} = band;
+// console.log(bname,"\n",song);
+
+
+// object inside Array............
+// const arr = [
+//        {uname:'Subba',uid:123,gen:'M'},
+//        {uname:"mario",uid:123,gen:"M"},
+//        {uname:"chand",uid:123,gen:"M"}
+// ]
+
+// const [{uname,uid,gen}] = arr;
+// console.log(uname,uid,gen);
+
+
+// FUNCTIONS.............
+// function sample(){
+//     console.log("Hello Subramanya");
+// }
+// sample();
+
+// function add(a,b,c){
+//     return a+b+c;
+// }
+// console.log(add(4,2,3));
+
+
+// function iseven(a){
+//     if(a % 2==0){
+//         return true;
+//     }
+//         return false;
+// }console.log(iseven(3))
+// console.log(iseven(4))
+
+// console.lg(14 % 2 ===0);
+
+
+// function findindex(arr,tar){
+//     for (let i = 0; i <= arr.length; i++){
+//         if(arr[i] == tar){
+//             return i;
+//         }
+//     }
+//     return -1;
+// }
+// const myarr = [1,2,3,4,5];
+// const result = findindex(myarr,3);
+// console.log(result);
+
+// NESTED FUNCTIONS...........
+// function app(){
+//     const myfunc = () =>{
+//         console.log("Hello this in Function")
+//     }
+//     const add = (a,b) => (a+b);
+
+//     const mutl = (a,b) => (a*b);
+//     console.log("INSIDE APP")
+//     myfunc();
+//     console.log(add(4,3));
+//     console.log(mutl(3,2));
+// }
+// app();
+
+
+// ARROW FUNCTIONS..........
+
+// const myname = () => {
+//     console.log("Subramanyaaa........");
+// } 
+// myname();
+
+// const add = (a,b) => {
+//     return a+b;
+// }
+// console.log(add(4,3));
+
+// const iseven =  (a) => {
+//     return a % 2===0;
+// }
+// console.log(iseven(4))
+
+// const findindex =  (arr,tar) => {
+//     for(let i = 0; i<=arr.length; i++){
+//         if(arr[i]===tar){
+//             return i;
+//         }
+//     }
+//     return -1;
+// }
+// const my = [1,3,2,5,43,6];
+// const res = findindex(my,2);
+// console.log(res);
+
+
+//lexical scope................
+
+// const my = "Value1";
+// function app(){
+
+//     const myfunc = () => {
+//     const myfunc2 = ()=>{
+//         console.log("This is another Func",my);
+//     }
+//     myfunc2();
+// }
+//     console.log(my);
+//     myfunc();
+// }app();
+
+// black scope vs function scope.............
+
+// function app(a,b){
+//    return a+b;
+
+// }
+// const ans = app(4,3);
+// console.log(ans)
+// app()
+
+
+
+// Hoisting..............
+// console.log(hello);
+// var hello = "Hello World";
+// console.log(hello);
+
+function addall(...numbers){
+    let total = 0;
+    for(let number of numbers){
+        total = total + number;
+    }
+    return total
 }
-console.log(data);
 
-delete data.age;
-console.log(data);
-data.age = 25;
-console.log(data);
-Object.assign(data,{country: "USA"});
-console.log(data);
+const ans = addall(4,5,4,2,10);
+
+console.log(ans)
