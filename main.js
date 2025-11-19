@@ -139,10 +139,40 @@
 // console.log(a)
 
 
-let fname = -1;
+// let fname = -1;
 
-if(fname){
-    console.log(fname)
-}else{
-    console.log("fname Kinda Empty")
-}
+// if(fname){
+//     console.log(fname)
+// }else{
+//     console.log("fname Kinda Empty")
+// }
+
+
+// Callback Function.............
+
+// function myfunc2(name)
+
+// {
+//     console.log('inside my func 2')
+//     console.log(`your name is ${name}`);
+// }
+// function myfunc(Callback){
+//     console.log("hello there i'am a func and i can...")
+//     Callback("harshit");
+// }
+// myfunc(myfunc2);
+
+// function return function...........
+// function myfunc(){
+//     function hello(){
+//         console.log("hello world")
+//     }
+//     return hello;
+// }
+// const ans = myfunc();
+// ans();
+
+// const v1=10
+// const v2= 30
+// res = 
+// console.log()
