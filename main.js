@@ -156,11 +156,16 @@
 //     console.log('inside my func 2')
 //     console.log(`your name is ${name}`);
 // }
-// function myfunc(Callback){
-//     console.log("hello there i'am a func and i can...")
-//     Callback("harshit");
-// }
-// myfunc(myfunc2);
+function myfunc(Callback){
+    console.log("hello there i'am a func and i can...")
+    Callback("harshit");
+
+}
+// myfunc(myfunc2)
+myfunc(function(name){
+    console.log('inside my func 2')
+    console.log(`your name is ${name}`);
+});
 
 // function return function...........
 // function myfunc(){
@@ -176,3 +181,7 @@
 // const v2= 30
 // res = 
 // console.log()
+
+
+
+

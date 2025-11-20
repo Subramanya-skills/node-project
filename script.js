@@ -128,9 +128,9 @@
 //     key1: "value1",
 //     key2: "value2"
 // };
-let c = [1]
+// let c = [1]
 
-console.log({}==Object)
+// console.log({}==Object)
 
 
 // const obj2 = {
@@ -143,21 +143,21 @@ console.log({}==Object)
 
 // object Destructuring.........
 
-const band = {
-    name: "Chitramanjari",
-    famoussong: "Kannadigaru"
-};
+// const band = {
+//     name: "Chitramanjari",
+//     famoussong: "Kannadigaru"
+// };
 // const bandName = band.name;
 // const bandFamoussong = band.famoussong;
 // console.log(bandName,bandFamoussong);
 
-let a = 10
-a = 20;
+// let a = 10
+// a = 20;
 
-const b = 10
-const arr=[1,2,3]
-arr.push(4)
-console.log(arr)
+// const b = 10
+// const arr=[1,2,3]
+// arr.push(4)
+// console.log(arr)
 
 // console.log(b)
 // const band = {
@@ -305,3 +305,13 @@ console.log(arr)
 // const ans = addall(4,5,4,2,10);
 
 // console.log(ans)
+
+
+const number = [2,3,4,5,6];
+
+function myfunc(numbers,index){
+    console.log(`Index of ${index} Value is ${numbers}`);
+}
+for (let i = 0; i<number.length; i++){
+    myfunc(number[i],i)
+}
